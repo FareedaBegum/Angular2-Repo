@@ -1,0 +1,19 @@
+<p>Playlist component inside the main component of the app</p>
+<table class="table table-hover">
+<thead>
+  <tr>
+      <td>ID</td>
+      <td>Title</td>
+      <td>VideoCode</td>
+      <td>Description</td>
+  </tr>
+</thead>
+<tbody>
+  <tr *ngFor = "#vid of playlistVideos">
+      <td>{{vid.id}}</td>
+      <td>{{vid.title}}</td>
+      <td>{{vid.videoCode}}</td>
+      <td>{{vid.description}}</td>
+  </tr>
+</tbody>
+</table>
